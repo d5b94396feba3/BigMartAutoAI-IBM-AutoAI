@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+{% include 'navbar.html' %}
+
+
+
+
+<div class="container" style="color: white; opacity: 0.6;">
+
+    <div class="row">
+        <div class="col order-last ml-0">
+
+        </div>
+        <div class="col">
+            <div class="col-sm shadow-lg p-3 mb-5 mt-5 ml-5 mr-5 border border-dark rounded"
+                style="color: white; opacity: 0.94; margin-top: 39px; width: 480px; font-size: 18px; text-align: center;">
+
+
+
+                <p class="mt-3 lead"><b> Your form has been received, Thanks. </b></p>
+                <hr>
+                <p class="lead">
+                    <a class="btn btn-dark btn-sm" href="/" role="button">Back to Home</a>
+                </p>
+
+            </div>
+        </div>
+        <div class="col order-first">
+
+        </div>
+    </div>
+
+</div>
+<hr>
+<hr>
+
+
+{% include 'footer.html' %}
+
+{% endblock %}

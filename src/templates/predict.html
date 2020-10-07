@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Quick Test{% endblock %}
+
+
+
+
+{% block scripts %}
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+
+
+{% endblock scripts %}
+
+
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+
+<div class="container ">
+    <div class="row">
+
+
+        <div class="col order-last ml-0">
+        
+        </div>
+
+
+        <div class="col">
+
+        <div style="color: white; opacity: 0.6; text-align: center; 
+        margin-top: 70px; width: 520px; height: 242px;"
+            class="shadow-lg p-3 mb-5 ml-0 mr-0 bg-dark rounded">
+        
+            <h3>Test Details</h3>
+            <hr style=" border-top: 1px solid #696969;">
+        
+            {% if res['result'] == 0 %}
+        
+
+            <h5 style="margin-bottom: 13px;">
+                Congratulations, Test Result is Negative.
+            </h5>
+            {% else %}
+            <h5 style="margin-bottom: 12px;">
+                Test Result is Positive.
+            </h5>
+            <p>
+                You'd better contact with any Thyriod Specialist Doctors ASAP.
+            </p>
+        
+            {% endif %}
+        
+            <p>Models Performance : {{res['overall_accuracy']}}</p>
+            <p>Likelihood Ratio Of Thyroid Desease [Negative, Positive] : [{{res['ratio'][0]}}, {{res['ratio'][1]}}]</p>
+        
+        </div>
+
+
+        </div>
+
+        <div class="col order-first">
+        </div>
+
+    </div>
+
+    
+</div>
+<hr>
+
+
+{% include 'footer.html' %}
+{% endblock content%}

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Quick Test{% endblock %}
+
+
+
+
+{% block scripts %}
+
+
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+{% endblock scripts %}
+
+
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+<div class="container" style="color: white; opacity: 0.6;">
+
+    <div class="row">
+        <div class="col order-last ml-0">
+        </div>
+        <div class="col">
+        <div class="col-sm shadow-lg p-3 mb-5 mt-5 ml-2 mr-5 border border-dark rounded" 
+        style="color: white; opacity: 0.94; margin-top: 39px; width: 460px; font-size: 18px;">
+
+                        <p class="mt-3"><b>Q. What types of data consisted in the dataset?</b> </p>
+                        <p style="margin-left: 12px;"><i class="far fa-arrow-alt-circle-right"></i> The dataset is consisted of local
+                            data.</p>
+                        <p class="mt-3"><b>Q. How many attributes in the dataset?</b></p>
+                        <p style="margin-left: 12px;"><i class="far fa-arrow-alt-circle-right"></i> 20 attributes.</p>
+                        <p class="mt-3"><b>Q. What P. Language used to build this ML application?</b></p>
+                        <p style="margin-left: 12px;"><i class="far fa-arrow-alt-circle-right"></i> Python</p>
+                        <p class="mt-3"><b>Q. Where it is hosted?</b></p>
+                        <p style="margin-left: 12px;"><i class="far fa-arrow-alt-circle-right"></i> pythonanywhere</p>
+                        <p class="mt-3"><b>Q. Which framework is used?</b></p>
+                        <p style="margin-left: 12px;"><i class="far fa-arrow-alt-circle-right"></i> Flask framework</p>
+        </div>
+        </div>
+        <div class="col order-first">
+
+        </div>
+    </div>
+
+</div>
+<hr>
+<hr>
+
+{% include 'footer.html' %}
+{% endblock content%}

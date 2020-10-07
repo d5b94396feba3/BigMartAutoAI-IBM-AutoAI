@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Quick Test{% endblock %}
+
+
+
+
+{% block scripts %}
+
+
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+{% endblock scripts %}
+
+
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+<div class="container" style="color: white; opacity: 0.5;">
+
+<div class="row">
+    <div class="col order-last ml-0">
+        <!-- <div class="contact-clean">
+            <form method="post"  style="border:0; margin-right: 5px;" >
+                <h2 class="text-center">Contact us</h2>
+                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required></div>
+                <div class="form-group"><input class="form-control" type="email" name="email"
+                        placeholder="Email" required>
+                </div>
+                <div class="form-group"><textarea class="form-control" rows="14" name="message"
+                        placeholder="Message" required></textarea></div>
+                <div class="form-group"><button class="btn btn-dark" type="submit">send </button></div>
+            </form>
+        </div> -->
+    </div>
+
+    <div class="col">
+            <div class="contact-clean">
+                <form action="{{url_for('contact_us')}}" method="post" style="border:0; margin-right: 5px; width: 540px; margin-top: 55px; margin-bottom: 50px;">
+                    <h2 class="text-center">Contact us</h2>
+                    <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" required></div>
+                    <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"
+                            required></textarea></div>
+                    <div class="form-group"><button class="btn btn-dark" type="submit">send </button></div>
+                </form>
+            </div>
+    </div>
+
+    <div class="col order-first">
+        
+    </div>
+</div>
+
+</div>
+<hr><hr>
+
+{% include 'footer.html' %}
+{% endblock content%}

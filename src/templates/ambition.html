@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Quick Test{% endblock %}
+
+
+
+
+{% block scripts %}
+
+
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+{% endblock scripts %}
+
+
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+<div class="container" style="color: white; opacity: 0.6;">
+
+    <div class="row">
+        <div class="col order-last ml-0">
+
+        </div>
+        <div class="col">
+            <div class="col-sm shadow-lg p-3 mb-5 mt-5 ml-1 mr-5 border border-dark rounded"
+                style="color: white; opacity: 0.94; margin-top: 39px; width: 480px; font-size: 18px; text-align: justify;">
+
+
+                <p class="mt-3"><b>Q. Why do we need ML Application for Thyroid disease?</b> </p>
+                <p style="margin-left: 12px;"><i class="far fa-arrow-alt-circle-right"></i> 
+                The present study says that thyroid disease is becoming a global health problem that can
+                substantially impact well-being. In this case detection of thyroid
+                disease using machine learning algorithm at its early stage can play a leading role in treatment
+                since machine learning, techniques and tools are becoming more promising to predict disease 
+                and also minimizing the treatment cost.
+                </p>
+            </div>
+        </div>
+        <div class="col order-first">
+
+        </div>
+    </div>
+
+</div>
+<hr>
+<hr>
+
+{% include 'footer.html' %}
+{% endblock content%}
