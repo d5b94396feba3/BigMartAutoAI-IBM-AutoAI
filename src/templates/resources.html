@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Ambition{% endblock %}
+
+
+
+
+{% block scripts %}
+
+
+<!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+{% endblock scripts %}
+
+
+
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+
+<div class="container" style="color: white; opacity: 0.6;">
+
+    <div class="row">
+        <div class="col order-last ml-0">
+
+        </div>
+        <div class="col">
+            <div class="col-sm shadow-lg p-3 mb-5 mt-5 ml-1 mr-5 border border-dark rounded"
+                style="color: white; opacity: 0.94; margin-top: 39px; width: 480px; font-size: 18px; text-align: justify;">
+
+
+                <p class="mt-3"><i class="far fa-arrow-alt-circle-right"></i> <b>Useful Resources</b> </p>
+                <p style="margin-left: 12px;">
+                <ul>
+                <li>
+                Watson Studio AutoAI : <a href="https://www.ibm.com/cloud/watson-studio/autoai?cm_sp=freelancer-_-AutoAI-_-cta" target="_blank">Visit official website for more information</a>
+                </li> <br>
+                <li>
+                Step by step tutorials : <a href="https://www.ibm.com/cloud/garage/dte/tutorial/ibm-watson-studio-autoai-modeling-rest-us?cm_sp=freelancer-_-AutoAI-_-cta" target="_blank"> Follow step by step tutorials</a> 
+                </li>   <br>
+                <li>Video tutorials : <a href="https://www.youtube.com/watch?v=knxbJgPmD5E" target="_blank">Watch Videos</a>
+                </li> <br>
+                <li>Documentations : <a href="https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-overview.html?cm_sp=freelancer-_-AutoAI-_-cta" target="_blank">Read Documentations</a>
+                </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="col order-first">
+
+        </div>
+    </div>
+
+</div>
+<hr>
+<hr>
+
+{% include 'footer.html' %}
+{% endblock content%}

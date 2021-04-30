@@ -26,7 +26,7 @@
 
 
 
-<div class="container ">
+<div class="container " style="margin-bottom: 50px;">
     <div class="row">
 
 
@@ -38,30 +38,21 @@
         <div class="col">
 
         <div style="color: white; opacity: 0.6; text-align: center; 
-        margin-top: 70px; width: 520px; height: 242px;"
+        margin-top: 70px; width: 520px; height: 262px;"
             class="shadow-lg p-3 mb-5 ml-0 mr-0 bg-dark rounded">
         
             <h3>Test Details</h3>
             <hr style=" border-top: 1px solid #696969;">
         
-            {% if res['result'] == 0 %}
         
 
-            <h5 style="margin-bottom: 13px;">
-                Congratulations, Test Result is Negative.
+            <h5 style="margin-bottom: 26px; font-weight: bold; font-size: 36px; margin-top: 22px;">
+                Predicted Outlet Sales : <strong>{{res}}</strong>
             </h5>
-            {% else %}
-            <h5 style="margin-bottom: 12px;">
-                Test Result is Positive.
-            </h5>
-            <p>
-                You'd better contact with any Thyriod Specialist Doctors ASAP.
+
+            <p style="margin-top:48px;">
+                <i>Powered by IBM Watson Machine Learning and AutoAI</i>
             </p>
-        
-            {% endif %}
-        
-            <p>Models Performance : {{res['overall_accuracy']}}</p>
-            <p>Likelihood Ratio Of Thyroid Desease [Negative, Positive] : [{{res['ratio'][0]}}, {{res['ratio'][1]}}]</p>
         
         </div>
 
