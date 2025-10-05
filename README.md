@@ -1,5 +1,5 @@
 # BigMartAutoAI
-### AutoAI based machine learning application for predicting bigmart sales using python and flask framework.
+### IBM AutoAI-based machine learning application for predicting BigMart sales using the Flask framework.
 
 #### Read medium blog post of this tutorial [HERE!](https://medium.com/@sha-rah646/how-to-create-and-deploy-machine-learning-model-with-watson-studio-autoai-ca1c772124c6) 
 
